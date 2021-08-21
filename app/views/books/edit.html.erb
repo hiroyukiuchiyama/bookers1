@@ -1,6 +1,6 @@
 <h1>Editing Book</h1>
 
-<%= form_for(@book) do |d| %>
+<%= form_with model: @book do |d| %>
   <%= render 'layouts/error_messages', book: @book %>
 
   <h4>Title</h4>
